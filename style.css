@@ -1,8 +1,8 @@
 /* ============================================================
-   SKYGLASS WEATHER DASHBOARD — style.css
+   SKYGLASS WEATHER DASHBOARD â€” style.css
    ============================================================ */
 
-/* ── Design Tokens ─────────────────────────────────────── */
+/* â”€â”€ Design Tokens â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 :root {
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
@@ -54,7 +54,7 @@
   --shadow-sm: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-/* ── Reset ──────────────────────────────────────────────── */
+/* â”€â”€ Reset â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
@@ -70,7 +70,7 @@ a:hover { text-decoration: underline; }
 img { display: block; max-width: 100%; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-/* ── Background Scene ───────────────────────────────────── */
+/* â”€â”€ Background Scene â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .bg-scene {
   position: fixed;
   inset: 0;
@@ -113,7 +113,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   100% { transform: translateY(-110vh) translateX(40px); opacity: 0; }
 }
 
-/* ── App Shell ──────────────────────────────────────────── */
+/* â”€â”€ App Shell â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .app-shell {
   position: relative;
   z-index: 1;
@@ -125,7 +125,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-direction: column;
 }
 
-/* ── Header ─────────────────────────────────────────────── */
+/* â”€â”€ Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .app-header {
   display: flex;
   align-items: center;
@@ -199,7 +199,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 [data-theme="light"] .icon-sun { opacity: 0; display: none; }
 [data-theme="light"] .icon-moon { opacity: 1; display: block; }
 
-/* ── Search ─────────────────────────────────────────────── */
+/* â”€â”€ Search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .search-section {
   padding: 12px 0 20px;
 }
@@ -259,7 +259,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .search-btn:active { transform: scale(0.97); }
 .search-btn svg { width: 16px; height: 16px; }
 
-/* ── Error Banner ───────────────────────────────────────── */
+/* â”€â”€ Error Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .error-banner {
   max-width: 480px;
   margin: 0 auto 12px;
@@ -279,7 +279,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 12px 20px;
 }
 
-/* ── Loading ────────────────────────────────────────────── */
+/* â”€â”€ Loading â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .loading-state {
   display: none;
   flex-direction: column;
@@ -300,7 +300,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── Empty State ────────────────────────────────────────── */
+/* â”€â”€ Empty State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.6;
 }
 
-/* ── Weather Content ────────────────────────────────────── */
+/* â”€â”€ Weather Content â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .weather-content {
   display: flex;
   flex-direction: column;
@@ -347,7 +347,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Current Weather Hero ───────────────────────────────── */
+/* â”€â”€ Current Weather Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .current-weather {
   background: var(--bg-card);
   backdrop-filter: blur(24px);
@@ -470,7 +470,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
 }
 
-/* ── Stats Grid ─────────────────────────────────────────── */
+/* â”€â”€ Stats Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -586,7 +586,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .sun-arc { width: 120px; color: var(--accent-warm); }
 .sun-dot { filter: drop-shadow(0 0 6px var(--accent-warm)); }
 
-/* ── Section Titles ─────────────────────────────────────── */
+/* â”€â”€ Section Titles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .section-title {
   font-family: var(--font-display);
   font-size: 0.8rem;
@@ -597,7 +597,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 12px;
 }
 
-/* ── 5-Day Forecast ─────────────────────────────────────── */
+/* â”€â”€ 5-Day Forecast â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .forecast-strip {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -661,7 +661,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.3;
 }
 
-/* ── Hourly Strip ───────────────────────────────────────── */
+/* â”€â”€ Hourly Strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hourly-strip {
   display: flex;
   gap: 10px;
@@ -717,7 +717,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--text-primary);
 }
 
-/* ── Footer ─────────────────────────────────────────────── */
+/* â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .app-footer {
   margin-top: auto;
   padding: 32px 0 0;
@@ -727,7 +727,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: 0.02em;
 }
 
-/* ── Responsive ─────────────────────────────────────────── */
+/* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 700px) {
   .app-shell { padding: 0 14px 48px; }
 
@@ -763,10 +763,221 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .brand-name { display: none; }
 }
 
-/* ── Reduced Motion ─────────────────────────────────────── */
+/* â”€â”€ Reduced Motion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* â”€â”€ New Features Styles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+/* Geo + Fav buttons */
+.header-actions { gap: 10px; }
+.geo-btn, .fav-btn {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.geo-btn:hover, .fav-btn:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-strong);
+  transform: scale(1.05);
+}
+
+/* Alerts */
+.alerts-container {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+.alert-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(251,191,36,0.08);
+  border: 1px solid rgba(251,191,36,0.25);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  animation: contentIn 0.4s ease both;
+}
+.alert-icon { font-size: 1.4rem; flex-shrink: 0; }
+.alert-msg {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* History & Favorites */
+.history-container, .favorites-container {
+  display: none;
+}
+.history-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.history-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.history-chip:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+.fav-chip { border-color: rgba(239,68,68,0.3); }
+.fav-chip:hover { border-color: rgba(239,68,68,0.6); }
+
+/* AQI */
+.aqi-container { display: none; }
+.aqi-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.aqi-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.aqi-icon { font-size: 1.8rem; }
+.aqi-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+.aqi-value {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.aqi-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+.aqi-bar-wrap { display: flex; flex-direction: column; gap: 6px; }
+.aqi-bar {
+  height: 8px;
+  background: var(--bg-surface);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.aqi-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.aqi-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.68rem;
+  color: var(--text-tertiary);
+}
+.aqi-components {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+.aqi-comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  background: var(--bg-surface);
+  border-radius: 8px;
+  padding: 8px 4px;
+  text-align: center;
+}
+.aqi-comp span {
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.aqi-comp strong {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+}
+
+/* Map */
+.map-container { display: none; }
+.map-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.map-layer-btns {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.map-btn {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.map-btn:hover, .map-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+.map-wrap { border-radius: 12px; overflow: hidden; }
+
+/* Responsive for new features */
+@media (max-width: 700px) {
+  .aqi-components { grid-template-columns: repeat(3, 1fr); }
+  .map-header { flex-direction: column; align-items: flex-start; }
 }
